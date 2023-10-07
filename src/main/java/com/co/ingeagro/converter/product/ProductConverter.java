@@ -47,6 +47,8 @@ public class ProductConverter implements Converter<ProductData, Product> {
                 .quantityType(quantityTypeConverter.convert2Data(model.getQuantityType()))
                 .stock(stockConverter.convert2Data(model.getStock()))
                 .active(model.getActive())
+                .lat(model.getLat())
+                .lng(model.getLng())
                 .build();
     }
 
@@ -64,6 +66,8 @@ public class ProductConverter implements Converter<ProductData, Product> {
                 .quantityType(quantityTypeConverter.convert2Model(data.getQuantityType()))
                 .stock(stockConverter.convert2Model(data.getStock()))
                 .active(data.getActive())
+                .lat(data.getLat())
+                .lng(data.getLng())
                 .build();
     }
 }

@@ -18,4 +18,6 @@ public class User {
     private Person person;
     private LocalDateTime timeCreation;
     private LocalDateTime timeModification;
+    private Double lat;
+    private Double lng;
 }

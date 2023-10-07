@@ -30,5 +30,9 @@ public class UserData {
     private LocalDateTime timeCreation;
     @Column
     private LocalDateTime timeModification;
+    @Column
+    private Double lat;
+    @Column
+    private Double lng;
 
 }

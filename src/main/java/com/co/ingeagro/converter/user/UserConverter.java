@@ -31,6 +31,8 @@ public class UserConverter implements Converter<UserData, User> {
                 .password(model.getPassword())
                 .timeCreation(model.getTimeCreation())
                 .timeModification(model.getTimeModification())
+                .lng(model.getLng())
+                .lat(model.getLat())
                 .person(personConverter.convert2Data(model.getPerson()))
                 .build();
     }
@@ -46,6 +48,8 @@ public class UserConverter implements Converter<UserData, User> {
                 .password(data.getPassword())
                 .timeCreation(data.getTimeCreation())
                 .timeModification(data.getTimeModification())
+                .lng(data.getLng())
+                .lat(data.getLat())
                 .person(personConverter.convert2Model(data.getPerson()))
                 .build();
     }

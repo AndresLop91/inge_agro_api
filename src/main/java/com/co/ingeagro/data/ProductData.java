@@ -34,5 +34,9 @@ public class ProductData {
     @Column
     private LocalDateTime timeCreation;
     private Boolean active;
+    @Column
+    private Double lat;
+    @Column
+    private Double lng;
 
 }

@@ -24,4 +24,6 @@ public class Product {
     private ProductType productType;
     private LocalDateTime timeCreation;
     private Boolean active;
+    private Double lat;
+    private Double lng;
 }
