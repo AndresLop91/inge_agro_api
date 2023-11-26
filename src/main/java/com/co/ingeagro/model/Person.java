@@ -19,6 +19,7 @@ public class Person {
     private String identificationNumber;
     private IdentificationType identificationType;
     private Gender gender;
+    private String phoneNumber;
     private LocalDateTime timeCreation;
 
 }

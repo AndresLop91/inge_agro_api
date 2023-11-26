@@ -34,6 +34,8 @@ public class PersonData {
     @OneToOne(cascade = {CascadeType.MERGE})
     private GenderData gender;
     @Column
+    private String phoneNumber;
+    @Column
     private LocalDateTime timeCreation;
 
 }

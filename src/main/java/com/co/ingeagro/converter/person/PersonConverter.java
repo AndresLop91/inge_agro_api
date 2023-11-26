@@ -39,6 +39,7 @@ public class PersonConverter implements Converter<PersonData, Person> {
                 .identificationNumber(model.getIdentificationNumber())
                 .identificationType(identificationTypeConverter.convert2Data(model.getIdentificationType()))
                 .gender(genderConverter.convert2Data(model.getGender()))
+                .phoneNumber(model.getPhoneNumber())
                 .timeCreation(model.getTimeCreation())
                 .build();
     }
@@ -56,6 +57,7 @@ public class PersonConverter implements Converter<PersonData, Person> {
                 .identificationNumber(data.getIdentificationNumber())
                 .identificationType(identificationTypeConverter.convert2Model(data.getIdentificationType()))
                 .gender(genderConverter.convert2Model(data.getGender()))
+                .phoneNumber(data.getPhoneNumber())
                 .timeCreation(data.getTimeCreation())
                 .build();
     }
